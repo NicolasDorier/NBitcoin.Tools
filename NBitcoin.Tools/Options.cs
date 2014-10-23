@@ -46,7 +46,7 @@ namespace NBitcoin.Tools
             if (_Usage == null)
             {
                 _Usage = HelpText.AutoBuild(this, (HelpText current) => HelpText.DefaultParsingErrorsHandler(this, current));
-                _Usage = _Usage.Replace("NBitcoin.Tools 1.0.0.0", "NBitcoin.Tools " + typeof(Program).Assembly.GetName().Version);
+                _Usage = _Usage.Replace("NBitcoin 1.0.0.0", "NBitcoin.Tools " + typeof(Program).Assembly.GetName().Version);
             }
             return _Usage;
             //
