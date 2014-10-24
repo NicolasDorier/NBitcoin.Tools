@@ -4,8 +4,11 @@ NBitcoin.Tools
 Console application for common bitcoin key operations
 
 NBitcoin.Tools 1.0.0.0
+
 Copyright © Nicolas Dorier 2014
+
 MIT
+
 This tool allows some common key operations on Bitcoin. Donation for pizza at
 15sYbVpRh6dyWycZMwPdxJWD4xbfxReeHe ;)
 
