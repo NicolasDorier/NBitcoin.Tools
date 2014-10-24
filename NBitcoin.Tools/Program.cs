@@ -94,6 +94,23 @@ namespace NBitcoin.Tools
                         Console.WriteLine(secret);
                     }
                 }
+
+                if (!String.IsNullOrEmpty(options.ParseBase58))
+                {
+                    try
+                    {
+                        var result = Network.CreateFromBase58Data(options.ParseBase58, network);
+                        Console.WriteLine(result.GetType().Name);
+                        if (result is BitcoinSecret)
+                        {
+                            Console.WriteLine("Bitcoin Address " + ((BitcoinSecret)result).GetAddress());
+                        }
+                    }
+                    catch (FormatException)
+                    {
+                        Console.Write("Invalid base58");
+                    }
+                }
             }
         }
 

@@ -31,6 +31,13 @@ namespace NBitcoin.Tools
             set;
         }
 
+        [Option("parse", DefaultValue = null, Required = false, HelpText = "Parse a base58 string")]
+        public string ParseBase58
+        {
+            get;
+            set;
+        }
+
 
         [Option("n", DefaultValue = "mainnet", Required = false, HelpText = "Network : mainnet or testnet (default : mainnet)")]
         public string Network
