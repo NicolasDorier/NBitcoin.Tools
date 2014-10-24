@@ -15,6 +15,8 @@ This tool allows some common key operations on Bitcoin. Donation for pizza at
 
   --dek         (Default: False) Decrypt encrypted key (BIP38)
 
+  --parse       (Default: ) Parse a base58 string
+
   --n           (Default: mainnet) Network : mainnet or testnet (default :
                 mainnet)
 
