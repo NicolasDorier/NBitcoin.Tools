@@ -55,13 +55,13 @@ namespace NBitcoin.Tools
                 if (options.DecryptEncryptedKey)
                 {
                     Console.WriteLine("Encrypted Key ?");
-                    BitcoinEncryptedSecretNoEC key = null;
+                    BitcoinEncryptedSecret key = null;
                     while (true)
                     {
                         var encrypted = Console.ReadLine();
                         try
                         {
-                            key = new BitcoinEncryptedSecretNoEC(encrypted);
+                            key = BitcoinEncryptedSecret.Create(encrypted);
                             break;
                         }
                         catch (FormatException)
